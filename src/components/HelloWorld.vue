@@ -34,6 +34,9 @@
 export default {
   name: 'HelloWorld',
   props: {
+		/** Sets msg form father component
+		 * @since 1.0.0
+		 */
     msg: String
   }
 }
@@ -56,3 +59,16 @@ a {
   color: #42b983;
 }
 </style>
+
+<docs>
+HelloWorld展示页
+
+## Examples
+
+填入msg:
+
+```jsx
+<HelloWorld msg="中国最强！"></HelloWorld>
+```
+ 
+</docs>
