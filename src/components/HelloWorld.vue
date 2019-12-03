@@ -27,10 +27,18 @@
       <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
+    <mt-button type="default">default</mt-button>
+    <mt-button type="primary">primary</mt-button>
   </div>
 </template>
 
 <script>
+import Vue from 'vue'
+import 'mint-ui/lib/style.css'
+import { Button, Cell } from 'mint-ui'
+Vue.component(Button.name, Button)
+Vue.component(Cell.name, Cell)
+
 export default {
   name: 'HelloWorld',
   props: {
