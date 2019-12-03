@@ -36,3 +36,14 @@ yarn styleguide
 ```
 yarn styleguide:build
 ```
+
+
+## 实现探索
+
+1）@vue/cli支持库打包模式，默认不会打包vue，需要在package.json配置入口组件路径。
+
+2）styleguide作为插件的方式引入。
+
+3) styleguide.config.js配置doc的相关参数，包括检索的内容，等等。
+
+4）尝试引入了mint-ui，也是可以的。
