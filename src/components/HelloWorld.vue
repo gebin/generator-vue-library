@@ -27,15 +27,16 @@
       <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
-    <mt-button type="default">default</mt-button>
-    <mt-button type="primary">primary</mt-button>
+    <mt-cell title="提交">
+      <mt-button type="primary" size="small" @click="handleToast">点击</mt-button>
+    </mt-cell>
   </div>
 </template>
 
 <script>
 import Vue from 'vue'
 import 'mint-ui/lib/style.css'
-import { Button, Cell } from 'mint-ui'
+import { Button, Cell, Toast } from 'mint-ui'
 Vue.component(Button.name, Button)
 Vue.component(Cell.name, Cell)
 
@@ -46,6 +47,15 @@ export default {
 		 * @since 1.0.0
 		 */
     msg: String
+  },
+  methods:{
+    /**
+     * 提醒用户信息
+     * @public
+     */
+    handleToast(){
+      Toast('你好，这里是点击事件demo！')
+    }
   }
 }
 </script>
@@ -69,7 +79,8 @@ a {
 </style>
 
 <docs>
-HelloWorld展示页
+
+HelloWorld 展示页
 
 ## Examples
 
@@ -78,5 +89,4 @@ HelloWorld展示页
 ```jsx
 <HelloWorld msg="中国最强！"></HelloWorld>
 ```
- 
 </docs>
