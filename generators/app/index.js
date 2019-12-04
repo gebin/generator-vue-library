@@ -10,8 +10,8 @@ module.exports = class extends Generator {
     // this.sourceRoot(baseRootPath);
     // this.sourceRoot();
     // this.config.save();
-    console.log(this.sourceRoot());
-    console.log(this.destinationRoot());
+    // console.log(this.sourceRoot());
+    // console.log(this.destinationRoot());
   }
   initializing() {}
   prompting() {}
@@ -42,14 +42,14 @@ module.exports = class extends Generator {
                 // Copy all items to our root
                 let fullPath = path.join(currentPath, item);
                 if (fs.lstatSync(fullPath).isDirectory()) {
-                    console.log(fullPath)
+                    // console.log(fullPath)
                     readdir(me,fullPath);
                 } else {
                     if (item === ".npmignore") {
                         me.fs.copy((fullPath), ".gitignore");
                     } else {
                         let relativePath = path.relative(baseRootPath,currentPath);
-                        console.log(relativePath)
+                        // console.log(relativePath)
                         me.fs.copy((fullPath), me.destinationPath(path.join(relativePath,item)));
                     }
                 }
