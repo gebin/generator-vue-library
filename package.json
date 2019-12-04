@@ -1,7 +1,14 @@
 {
-  "name": "vue-library-tpl",
+  "name": "generator-vue-library",
   "version": "0.1.0",
-  "private": true,
+  "main": "dist/helloWorld.common.js",
+  "author": "bge",
+  "license": "MIT",
+  "keywords": [
+    "template",
+    "vue",
+    "library"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

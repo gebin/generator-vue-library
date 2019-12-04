@@ -1,5 +1,7 @@
 # vue-library-tpl
 
+本项目目的是提供一个快速开发Vue组件的默认配置，基于@vue/cli 4.0+创建，自带支持lib打包功能。scripts中提供了build:lib模式，可以直接打包某个组件。
+
 ## Project setup
 ```
 yarn install
