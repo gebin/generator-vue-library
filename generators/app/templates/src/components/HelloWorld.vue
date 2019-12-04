@@ -1,6 +1,9 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <mt-cell class="cell-part" title="提交" is-link>
+      <mt-button type="primary" size="small" @click="handleToast">点击</mt-button>
+    </mt-cell>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -31,6 +34,12 @@
 </template>
 
 <script>
+import Vue from 'vue'
+import 'mint-ui/lib/style.css'
+import { Button, Cell, Toast } from 'mint-ui'
+Vue.component(Button.name, Button)
+Vue.component(Cell.name, Cell)
+
 export default {
   name: 'HelloWorld',
   props: {
@@ -38,6 +47,15 @@ export default {
 		 * @since 1.0.0
 		 */
     msg: String
+  },
+  methods:{
+    /**
+     * 提醒用户信息
+     * @public
+     */
+    handleToast(){
+      Toast('你好，这里是点击事件demo！')
+    }
   }
 }
 </script>
@@ -58,10 +76,15 @@ li {
 a {
   color: #42b983;
 }
+a.cell-part{
+  color: #000;
+  border:1px solid #ccc;
+}
 </style>
 
 <docs>
-HelloWorld展示页
+
+HelloWorld 展示页
 
 ## Examples
 
@@ -70,5 +93,4 @@ HelloWorld展示页
 ```jsx
 <HelloWorld msg="中国最强！"></HelloWorld>
 ```
- 
 </docs>
