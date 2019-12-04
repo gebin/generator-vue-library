@@ -23,7 +23,7 @@ module.exports = class extends Generator {
       "README.md",
       "CHANGELOG.md",
       "node_modules",
-      "package.json",
+    //   "package.json",
       ".istanbul.yml",
       ".travis.yml"
     ];
