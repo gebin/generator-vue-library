@@ -1,5 +1,5 @@
 {
-  "name": "generator-vue-library",
+  "name": "vue-library-tpl",
   "version": "0.1.0",
   "main": "dist/helloWorld.common.js",
   "author": "bge",
