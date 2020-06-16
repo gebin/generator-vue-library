@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "commit":"git-cz"
+    "commit": "git-cz"
   },
   "author": "bge",
   "license": "ISC",
@@ -18,8 +18,11 @@
     "yeoman-generator": "^4.2.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
     "commitizen": "^4.1.2",
-    "cz-conventional-changelog": "^3.2.0"
+    "cz-conventional-changelog": "^3.2.0",
+    "husky": "^4.2.5"
   },
   "config": {
     "commitizen": {
