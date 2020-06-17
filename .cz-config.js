@@ -13,8 +13,7 @@ module.exports = {
   ],
   scopes: [
     { name: "模块1" },
-    { name: "模块2"
-   },
+    { name: "模块2" },
     { name: "模块3" },
     { name: "模块4" },
   ],
