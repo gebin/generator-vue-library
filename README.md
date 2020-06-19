@@ -7,3 +7,5 @@
 # commit规范
 
 增加了commitizen来提示输入commit信息。
+
+增加了commitlint来规范commit信息。
